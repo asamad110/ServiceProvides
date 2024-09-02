@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:softcodixserviceproviders/consts.dart';
-import 'package:softcodixserviceproviders/controllers/assets_controller.dart';
+import 'package:softcodixserviceproviders/controllers/service_provider_controller.dart';
 import 'package:softcodixserviceproviders/models/service_provider.dart';
 
 class HomePage extends StatefulWidget {
@@ -14,7 +14,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  AssetsController assetsController = Get.find();
+  ServiceProviderController assetsController = Get.find();
 
   @override
   Widget build(BuildContext context) {
@@ -63,14 +63,14 @@ class _HomePageState extends State<HomePage> {
       );
     } else {
       return Container(
-        child: _trackedAssetsList(
+        child: _serviceProviderList(
           context,
         ),
       );
     }
   }
 
-  Widget _trackedAssetsList(
+  Widget _serviceProviderList(
     BuildContext context,
   ) {
     return Padding(

@@ -2,7 +2,7 @@ import 'package:get/get.dart';
 import 'package:softcodixserviceproviders/models/service_provider.dart';
 import 'package:softcodixserviceproviders/services/http_service.dart';
 
-class AssetsController extends GetxController {
+class ServiceProviderController extends GetxController {
   RxList<ServiceProvider> serviceProvidersData = <ServiceProvider>[].obs;
   RxBool loadingRoot = false.obs;
   RxBool loadingInDialog = false.obs;
