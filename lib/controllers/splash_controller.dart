@@ -10,7 +10,7 @@ class SplashController extends GetxController{
 
   Future navigateToLoginPage() async{
     await Future.delayed(const Duration(seconds: 3));
-    Get.off(()=> const LoginPage());
+    Get.off(transition: Transition.rightToLeft,duration: Duration(seconds: 1), ()=> const LoginPage());
 
   }
 }
